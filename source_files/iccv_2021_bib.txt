@@ -1,0 +1,6 @@
+@article{zou2021eventhpe,
+  title={EventHPE: Event-based 3D Human Pose and Shape Estimation},
+  author={Zou, Shihao and Guo, Chuan and Zuo, Xinxin and Wang, Sen and Wang, Pengyu and Hu, Xiaoqin and Chen, Shoushun and Gong, Minglun and Cheng, Li},
+  journal={arXiv preprint arXiv:2108.06819},
+  year={2021}
+}
