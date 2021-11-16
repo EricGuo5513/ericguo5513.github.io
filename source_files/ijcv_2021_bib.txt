@@ -1,0 +1,6 @@
+@article{zou2021human,
+  title={Action2video: Generating Videos of Human 3D Actions},
+  author={Guo, Chuan and Zuo, Xinxin and Wang, Sen and Liu, Xinshuang and Zou, Shihao and Gong, Minglun and Cheng, Li},
+  journal={arXiv preprint arXiv:2111.06925},
+  year={2021}
+}
