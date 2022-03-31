@@ -1,6 +1,0 @@
-@article{zou2021human,
-  title={Human Pose and Shape Estimation from Single Polarization Images},
-  author={Zou, Shihao and Zuo, Xinxin and Wang, Sen and Qian, Yiming and Guo, Chuan and Ji, Wei and Li, Jingjing and Gong, Minglun and Cheng, Li},
-  journal={arXiv preprint arXiv:2108.06834},
-  year={2021}
-}

@@ -1,0 +1,7 @@
+@article{zou2022human,
+  title={Human Pose and Shape Estimation from Single Polarization Images},
+  author={Zou, Shihao and Zuo, Xinxin and Wang, Sen and Qian, Yiming and Guo, Chuan and Cheng, Li},
+  journal={IEEE Transactions on Multimedia},
+  year={2022},
+  publisher={IEEE}
+}
