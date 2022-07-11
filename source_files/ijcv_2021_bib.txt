@@ -2,7 +2,9 @@
   title={Action2video: Generating Videos of Human 3D Actions},
   author={Guo, Chuan and Zuo, Xinxin and Wang, Sen and Liu, Xinshuang and Zou, Shihao and Gong, Minglun and Cheng, Li},
   journal={International Journal of Computer Vision},
-  pages={1--31},
+  volume={130},
+  number={2},
+  pages={285--315},
   year={2022},
   publisher={Springer}
 }
