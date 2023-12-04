@@ -1,0 +1,8 @@
+@article{guo2023momask,
+      title={MoMask: Generative Masked Modeling of 3D Human Motions}, 
+      author={Chuan Guo and Yuxuan Mu and Muhammad Gohar Javed and Sen Wang and Li Cheng},
+      year={2023},
+      eprint={2312.00063},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
