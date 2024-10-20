@@ -1,0 +1,6 @@
+@article{wang2024regiongrasp,
+  title={RegionGrasp: A Novel Task for Contact Region Controllable Hand Grasp Generation},
+  author={Wang, Yilin and Guo, Chuan and Cheng, Li and Jiang, Hai},
+  journal={arXiv preprint arXiv:2410.07995},
+  year={2024}
+}
