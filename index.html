@@ -21,15 +21,17 @@
     a:hover { text-decoration:underline; }
     .container { width:min(1080px, 94vw); margin:32px auto 64px; }
     .card { background:var(--card); border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow); padding:24px; margin-bottom:20px; }
-    .hero { display:grid; grid-template-columns:320px 1fr; gap:56px; align-items:center; }
-    .hero > div:first-child { padding-left:52px; }
-    .hero > div:last-child { padding-left:14px; }
+    .hero { display:grid; grid-template-columns:380px 1fr; gap:80px; align-items:center; }
+    .hero > div:first-child { padding-left:112px; }
+    .hero > div:last-child { padding-left:26px; }
     .avatar { width:250px; max-width:100%; border-radius:16px; border:1px solid var(--border); }
     h1 { margin:0 0 8px; font-size:2rem; line-height:1.15; }
     h2 { margin:0 0 14px; font-size:1.45rem; }
     h3 { margin:0 0 10px; font-size:1.2rem; }
-    .subtitle { color:var(--muted); margin-bottom:12px; }
+    .subtitle { color:var(--muted); margin-bottom:12px; font-size:1.2rem; }
+    .subtitle .line { display:block; }
     .links a { display:inline-block; margin:0 12px 8px 0; padding:6px 10px; border:1px solid var(--border); border-radius:8px; background:#fafafa; }
+    .hero-contact { font-size:1.2rem; color:#374151; margin-bottom:8px; }
     .note { background:#eef4ff; border:1px solid #dbe7ff; border-radius:12px; padding:10px 12px; }
     .news-list b { display:inline-block; margin-top:4px; }
 
@@ -39,10 +41,16 @@
     .pub-table td:first-child { width:330px; white-space:nowrap; overflow:hidden; text-align:center; }
     .pub-table td:first-child img { display:inline-block; vertical-align:middle; margin-right:8px; }
     .pub-table td:first-child img:last-child { margin-right:0; }
-    .pub-table img { max-width:100%; height:auto; border-radius:10px; border:1px solid var(--border); }
+    .pub-table img { max-width:100%; height:auto; border-radius:10px; border:none; }
+        .pub-table td.pair-gif img { width:162px !important; margin-right:4px !important; }
+    .pub-table td.pair-gif img:last-child { margin-right:0 !important; }
+    .pub-table td.pair-gif-small img { width:136px !important; margin-right:4px !important; }
+    .pub-table td.pair-gif-small img:last-child { margin-right:0 !important; }
+    .pub-table span[style*="font-size: 12pt"] { font-size:14pt !important; }
+    .pub-table span[style*="font-size: 10pt"] { font-size:12pt !important; }
 
     .muted { color:var(--muted); }
-    .small { font-size:.95rem; }
+    .small { font-size:.98rem; }
     @media (max-width:800px) {
       .hero { grid-template-columns:1fr; text-align:center; }
       .avatar { margin:0 auto; }
@@ -58,8 +66,8 @@
       </div>
       <div>
         <h1>Chuan Guo</h1>
-        <div class="subtitle">Research Scientist · Meta Reality Labs · Redmond, WA</div>
-        <div class="small">guochuan5513 at gmail.com</div>
+        <div class="subtitle"><span class="line">Research Scientist</span><span class="line">Meta Reality Labs</span><span class="line">Redmond, WA</span></div>
+        <div class="hero-contact">guochuan5513 at gmail.com</div>
         <p class="links">
           <a href="https://github.com/EricGuo5513">GitHub</a>
           <a href="https://scholar.google.com/citations?user=eCdqvJoAAAAJ&hl=en">Google Scholar</a>
@@ -80,7 +88,7 @@
         the Multimedia Group at the Institute of Computing Technology, Chinese Academy of Sciences, and earned my B.S. in
         Software Engineering from Jilin University.
       </p>
-      <p class="note">🔥 Our team is hiring research interns on human interaction, motion synthesis, and character animation. I am also open to academic collaboration. Contact me if you are interested.</p>
+      <p class="note">🔥 Our team is hiring research interns in embodied motion synthesis, human-world interaction, and foundational motion models. I am also open to academic collaboration. Contact me if you are interested.</p>
     </section>
 
     <section class="card">
@@ -88,7 +96,7 @@
       <div class="news-list small">
         <b>[Jan. 2026]</b> We are running the third workshop of <a href="https://humogen.github.io/">human motion generation (HuMoGen)</a> at <b>CVPR 2026</b>. Paper submissions are welcome.<br>
         <b>[Feb 2026]</b> Three papers on large-scale motion model, hand-object interaction, and motion pressure are accepted to <b>CVPR 2026</b>! Congratulations to Zimu Zhang, Zhengxuan Li, and Zekun Li. <br>
-        <b>[Jan 2026]</b> Two papers on human-human and human-object interactions are accepted to <b>ICLR 2026</b>! Congratulations to Qingxuan Wu and Ziyin Wang. <br>
+        <b>[Jan 2026]</b> Two papers on human–human and human–object interactions are accepted to <b>ICLR 2026</b>! Congratulations to Qingxuan Wu and Ziyin Wang. <br>
         <b>[Jan 2026]</b> I will serve as an Area Chair for <a href="https://icml.cc/">ICML 2026</a>. <br>
         <b>[Dec 2025]</b> <b>Dance like a Chicken</b> is conditionally accepted to <b>Eurographics 2026</b>. <br>
         <b>[Dec 2025]</b> Our survey on human interaction motion synthesis has been accepted by <b>IJCV</b>. <br>
@@ -509,7 +517,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td width="30%" align=center>
+                                    <td class="pair-gif" width="30%" align=center>
 
                                         <img width="145" align="center" src="./source_files/iclr2025_intermask/animation1_27.gif" border="0"> <img width="145" align="center" src="./source_files/iclr2025_intermask/infer_9.gif" border="0"> &nbsp;
                                     </td>
@@ -534,9 +542,9 @@
 
 
                                 <tr>
-                                    <td width="30%" align=center>
+                                    <td class="pair-gif-small" width="30%" align=center>
 
-                                        <img width="120" align="center" src="./source_files/eccvw2024_regiongrasp/binocular_1.gif" border="0"> &nbsp; &nbsp; &nbsp; &nbsp; <img width="120" align="center" src="./source_files/eccvw2024_regiongrasp/mug.gif" border="0"> &nbsp;
+                                        <img width="120" align="center" src="./source_files/eccvw2024_regiongrasp/binocular_1.gif" border="0"> <img width="120" align="center" src="./source_files/eccvw2024_regiongrasp/mug.gif" border="0"> &nbsp;
                                     </td>
 
                                     <td>
@@ -651,7 +659,7 @@
                                 <tr>
                                     <td width="30%" align=center>
 
-                                        <img width="300" align="center" src="./source_files/iccv_2023.png" border="0"> &nbsp;
+                                        <img width="300" align="center" src="./source_files/iccv_2023_tm2d/teaser_image.jpg" border="0"> &nbsp;
                                     </td>
 
                                     <td>
@@ -764,7 +772,7 @@
                              </tr>
 
                              <tr>
-                                <td width="30%" align=center>
+                                <td class="pair-gif" width="30%" align=center>
 
                                     <img width="145" align="center" src="./source_files/ijcv2022_action2video/demo1.gif" border="0"> <img width="145" align="center" src="./source_files/ijcv2022_action2video/demo2.gif" border="0"> &nbsp;
                                 </td>
@@ -851,56 +859,54 @@
     </section>
 
     <section class="card small">
-      <span style="font-size: 12pt;">Organizer of  <a href="https://humogen.github.io/"> Human Motion Generation (HuMoGen)</a> Workshop at CVPR 2024-2025.</span><br><br>
-                    <span style="font-size: 12pt;">Organizer of  <a href="https://3dmogen.github.io/"> 3D Human Motion Generation and Simulation</a> Tutorial at ICCV 2025, Honolulu.</span><br><br>
+      <h2>Academic Activities</h2>
+      <span style="font-size: 12pt;">Organizer of <a href="https://humogen.github.io/">Human Motion Generation (HuMoGen)</a> Workshop at CVPR 2024-2025.</span><br><br>
+      <span style="font-size: 12pt;">Organizer of <a href="https://3dmogen.github.io/">3D Human Motion Generation and Simulation</a> Tutorial at ICCV 2025, Honolulu.</span><br><br>
 
+      <span style="font-size: 12pt;">
+        Area Chair for 3D Vision 2026. <br>
+        Area Chair for ICLR 2026. <br>
+        Area Chair for ICML 2026.
+      </span><br><br>
 
-                    <span style="font-size: 12pt;">
-                        Area Chair for 3D Vision 2026. <br>
-                        Area Chair for ICLR 2026. <br>
-                        Area Chair for ICML 2026.
-                    </span><br><br>
+      <span style="font-size: 12pt;">
+        Reviewer for CVPR 2023-2026, SIGGRAPH 2024-2026, SIGGRAPH Asia 2024-2025, NeurIPS 2023-25, ICCV 2023/2025, ICML 2024-2025, Eurographics 2022/2025, ICLR 2024-2025, AAAI 2023-2025, ECCV 2024/2026, MultiMedia 2024, ACCV 2022, EMNLP 2021, ACML 2020-2021<br>
+        Reviewer for Transactions on Visualization and Computer Graphics (TVCG) <br>
+        Reviewer for Transactions on Machine Learning Research (TMLR) <br>
+        Reviewer for Transactions on Pattern Analysis and Machine Intelligence (TPAMI)<br>
+        Reviewer for Transactions on Graphics (ToG)<br>
+        Reviewer for IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)<br>
+        Reviewer for IEEE Robotics and Automation Letters (RA-L) <br>
+        Reviewer for IEEE Transactions on Multimedia (TMM)<br>
+        Reviewer for IEEE Transactions on Neural Networks and Learning Systems (TNNLS)<br>
+        Reviewer for Pattern Recognition (PR)<br>
+        Reviewer for Machine Learning<br>
+      </span>
+    </section>
 
-                    <span style="font-size: 12pt;">
-                        Reviewer for CVPR 2023-2026, SIGGRAPH Asia 2024-2025, NeurIPS 2023-25, ICCV 2023, 2025, SIGGRAPH 2024-25, ICML 2024-2025, Eurographics 2022,2025, ICLR 2024-2025, AAAI 2023-2025, ECCV 2024, MultiMedia 2024,  ACCV 2022, EMNLP 2021, ACML 2020-2021<br>
-                        Reviewer for Transactions on Visualization and Computer Graphics (TVCG) <br>
-                        Reviewer for Transactions on Machine Learning Research (TMLR) <br>
-                        Reviewer for Transactions on Pattern Analysis and Machine Intelligence (TPAMI)<br>
-                        Reviewer for Transactions on Graphics (ToG)<br>
-                        Reviewer for IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)<br>
-                        Reviewer for IEEE Robotics and Automation Letters (RA-L) <br>
-                        Reviewer for IEEE Transactions on Multimedia (TMM)<br>
-                        Reviewer for IEEE Transactions on Neural Networks and Learning Systems (TNNLS)<br>
-                        Reviewer for Pattern Recognition (PR)<br>
-                        Reviewer for Machine Learning<br>
-
-                    </span>
-
-
-                    <h2>Selected Honors & Awards </h2>
-                    <span style="font-size: 12pt;">
-                        <b>ICLR 2025 Notable Reviewers</b>, 2025<br>
-                        <b>J Gordin Kaplan Graduate Student Award</b>, University of Alberta, 2023<br>
-                        <b>Alberta Innovate Graduate Scholarship</b>, Alberta Province, 2023<br>
-                        <b>Alberta Graduate Excellence Scholarship</b>, Alberta Province, 2021<br>
-                        <b>Qihoo 360 Scholarship</b>, Qihoo 360 Technology Co. Ltd., 2016<br>
-                        <b>Undergraduate National Scholarship</b>, Chinese Ministry of Education, 2015<br>
-                        <b>Excellent Student of Jilin University</b>, Jilin University, 2015<br>
-                        <br>
-                        <b>ECCV 2022 Student Travel Grant</b> <br>
-                        <b>CVPR 2022 Student Travel Grant</b> <br>
-                        <b>Outstanding National Undergraduate Innovative Training Project</b>, Jilin University, 2016<br>
-                        <b>First-Prize in Jilin Provincial Mathematical Contest in Modeling</b>, Jilin Provincial Miniistry of Education, 2015<br>
-                    </span>
-                </font>
+    <section class="card small">
+      <h2>Selected Honors & Awards</h2>
+      <span style="font-size: 12pt;">
+        <b>ICLR 2025 Notable Reviewers</b>, 2025<br>
+        <b>J Gordin Kaplan Graduate Student Award</b>, University of Alberta, 2023<br>
+        <b>Alberta Innovate Graduate Scholarship</b>, Alberta Province, 2023<br>
+        <b>Alberta Graduate Excellence Scholarship</b>, Alberta Province, 2021<br>
+        <b>Qihoo 360 Scholarship</b>, Qihoo 360 Technology Co. Ltd., 2016<br>
+        <b>Undergraduate National Scholarship</b>, Chinese Ministry of Education, 2015<br>
+        <b>Excellent Student of Jilin University</b>, Jilin University, 2015<br>
+        <br>
+        <b>ECCV 2022 Student Travel Grant</b> <br>
+        <b>CVPR 2022 Student Travel Grant</b> <br>
+        <b>Outstanding National Undergraduate Innovative Training Project</b>, Jilin University, 2016<br>
+        <b>First-Prize in Jilin Provincial Mathematical Contest in Modeling</b>, Jilin Provincial Ministry of Education, 2015<br>
+      </span>
     </section>
 
     <section class="card small">
       <h3>Misc</h3>
       <span style="font-size: 10pt;">
                         I'm from Chengdu, China.<br>
-                        This website template is borrowed from <a href="https://richzhang.github.io/">here</a>.<br>
-                        Late updated on Dec 31, 2025.
+                        Last updated on Dec 31, 2025.
                     </span>
     </section>
   </main>
